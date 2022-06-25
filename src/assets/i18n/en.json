@@ -1,0 +1,13 @@
+{
+    "home": {
+        "comingSoonDescription": "Soon an audio guide narrated by the legendary Pharaoh Taharqa will be available, and he will open the doors on his fascinating kingdom.",
+        "countDownDay": "{{dayNo}} days",
+        "countDownTime": "{{hoursNo}} hours {{minutesNo}} minutes {{secondsNo}} seconds"   
+    },
+    "AboutProject": "About the Project",
+    "AboutProjectDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolo <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamr sit amet, consectetur adipiscing elit ut aliquamLorem ipsum dol",
+    "TheListofStatues": "The List of Statues",
+    "PREVIOUS": "PREVIOUS",
+    "NEXT": "NEXT",
+    "ReadMore": "Read More"
+}

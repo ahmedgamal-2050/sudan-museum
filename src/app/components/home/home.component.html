@@ -1,0 +1,187 @@
+<div id="home-container" [dir]="pageDirection" class="justify-content-between overflow-hidden">
+
+    <!-- Header -->
+    <header>
+        <nav class="bg-transparent">
+            <div class="px-lg-5 px-md-4 px-3">
+                <div class="row align-items-center justify-content-between pt-md-3 pt-2">
+                    <div class="col-auto">
+                        <a target="_blank" href="https://www.eunicglobal.eu/projects/sudan" class="">
+                            <img src="./assets/images/home/EUNIC_LOGO.svg" class="" alt="EUNIC Logo" title="EUNIC Logo"
+                                loading="lazy">
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a target="_blank" href="" class="">
+                            <img src="./assets/images/home/TURATH_Archaeology_Connects_logo.svg" class=""
+                                alt="TURATH Logo" title="TURATH Logo" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Splash -->
+        <section id="splash_section" class="pb-lg-6 pb-4 fade-in splash_section" *ngIf="showSplash">
+            <div class="px-lg-5 px-md-4 px-3">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 text-center">
+                        <img src="./assets/images/home/NCAM.png" class="main-logo" alt="SUDAN NATIONAL MUSEUM Logo"
+                            title="SUDAN NATIONAL MUSEUM Logo" height="134" width="181" loading="lazy">
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="./assets/images/snm-text-logo.svg" class="main-text-logo"
+                            alt="SUDAN NATIONAL MUSEUM Text Logo" title="SUDAN NATIONAL MUSEUM Text Logo" height="231"
+                            width="311" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Count Down -->
+        <main id="coming_soon_main" *ngIf="!showSplash && showComingSoon">
+            <!-- Logo -->
+            <section class="pb-3">
+                <div class="px-lg-5 px-md-4 px-3">
+                    <a href="./about.html" class="row align-items-center justify-content-center">
+                        <div class="col-auto px-0">
+                            <img src="./assets/images/home/NCAM.png" class="" height="125" width="80"
+                                alt="SUDAN NATIONAL MUSEUM Logo" title="SUDAN NATIONAL MUSEUM Logo" loading="lazy">
+                        </div>
+                        <div class="col-auto px-0">
+                            <h4 class="text-white">
+                                SUDAN<br>
+                                NATIONAL<br>
+                                MUSEUM
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Count Down -->
+            <section class="">
+                <div class="px-lg-5 px-md-4 px-3">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-12 text-center pb-3">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="./assets/images/coming-soon-lg.svg"
+                                    height="52" width="500">
+                                <img src="./assets/images/coming-soon.svg" class="main-text-logo" alt="Coming Soon"
+                                    title="Coming Soon" height="152" width="311" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 col-sm-8 text-center">
+                            <span
+                                class="coming-soon-text d-inline-block pb-md-4 pb-3 ff-inter border-bottom border-main">
+                                {{ "home.comingSoonDescription" | translate }}
+                            </span>
+                        </div>
+                        <div class="col-12 text-center">
+                            <h1 class="mb-0 fw-bold count-down-date">
+                                {{ countDownDay ? countDownDay: '' }}
+                            </h1>
+                            <h3 class="mb-0 count-down-time">
+                                {{ countDownTime ? countDownTime: '' }}
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Home -->
+        <main id="home_main" *ngIf="!showSplash && showHome">
+            <!-- Logo -->
+            <section id="logo_section" class="pb-lg-6 pb-4">
+                <div class="px-lg-5 px-md-4 px-3">
+                    <a routerLink="/about" class="row align-items-center justify-content-center">
+                        <div class="col-auto px-0">
+                            <img src="./assets/images/home/NCAM.png" class="main-logo" alt="SUDAN NATIONAL MUSEUM Logo"
+                                title="SUDAN NATIONAL MUSEUM Logo" loading="lazy">
+                        </div>
+                        <div class="col-auto">
+                            <h1 class="main-logo-text fw-bold">
+                                SUDAN<br>
+                                NATIONAL<br>
+                                MUSEUM
+                            </h1>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Language -->
+            <section id="language_section" class="fade-in">
+                <div class="px-lg-5 px-md-4 px-3">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-auto">
+                            <button type="button" (click)="setLang('fr')" class="btn-outline-main btn-lang">
+                                <span class="h4 mb-0 fw-bold justify-content-center align-items-center">
+                                    FRENCH
+                                </span>
+                            </button>
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="button" (click)="setLang('en')" class="btn-outline-main btn-lang">
+                                <span class="h4 mb-0 fw-bold justify-content-center align-items-center">
+                                    ENGLISH
+                                </span>
+                            </button>
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="button" (click)="setLang('ar')" class="btn-outline-main btn-lang">
+                                <span class="h4 mb-0 fw-bold justify-content-center align-items-center">
+                                    عـــــربـــــــى
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="pb-4">
+            <div class="px-lg-5 px-md-4 px-3">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-auto d-none" id="ambasciata_italia">
+                        <a target="_blank" href="javascript:void(0)" class="">
+                            <img src="./assets/images/home/Ambasciata_Italia.svg" class="footer-main-logo"
+                                alt="Ambasciata Italia Logo" title="Ambasciata Italia Logo" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="col-auto" id="european_union">
+                        <a target="_blank" href="https://www.eeas.europa.eu/delegations/sudan_en?s=122" class="">
+                            <img src="./assets/images/home/EN_V_Funded_by_the_EU_POS.svg" class="footer-main-logo"
+                                alt="European Union Logo" title="European Union Logo" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a target="_blank" href="https://www.alsoug.com/" class="">
+                            <img src="./assets/images/home/Alsoug.svg" class="footer-main-logo" alt="Al Soug Logo"
+                                title="Al Soug Logo" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a target="_blank" href="https://sfdas.com/?lang=en" class="">
+                            <img src="./assets/images/home/SFDAS.svg" class="footer-main-logo" alt="SFDAS Logo"
+                                title="SFDAS Logo" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a target="_blank" href="https://www.if-soudan.net/" class="">
+                            <img src="./assets/images/home/IFRS_Bleu.svg" class="footer-main-logo"
+                                alt="Institut Francais Logo" title="Institut Francais Logo" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</div>
