@@ -1,0 +1,1 @@
+const audio=document.querySelector("audio");function play(){audio&&audio.play()}
